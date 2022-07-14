@@ -1,0 +1,134 @@
+:root {
+  /* Primary Colors */
+  --darkBlue: hsl(233, 47%, 7%);
+  --desaturatedBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+
+  /* Neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --transparentWhiteMain: hsla(0, 0%, 100%, 0.75);
+  --transparentWhiteStat: hsla(0, 0%, 100%, 0.6);
+
+  /* Fonts */
+  --primaryFont: "Inter", sans-serif;
+  --secondaryFont: "Lexend Deca", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primaryFont);
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 2rem;
+  background-color: var(--darkBlue);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* Check widt */
+  max-width: 34rem;
+
+  margin: 0 auto;
+  background-color: var(--desaturatedBlue);
+
+  -webkit-border-radius: 0 0 1rem 1rem;
+  -moz-border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card__img {
+  object-fit: contain;
+  /* width: 100%; */
+  height: 100%;
+  -webkit-border-radius: 1rem 1rem 0 0;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card__content {
+  padding: 3.5rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__title {
+  text-align: center;
+  color: var(--white);
+  font-size: 2.9rem;
+  margin-top: 0;
+}
+
+.card__title--purple {
+  color: var(--softViolet);
+}
+
+.card__paragraph {
+  text-align: center;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--transparentWhiteMain);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__number {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 0;
+}
+
+.info__sector {
+  margin: 1rem 0 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-family: var(--secondaryFont);
+  color: var(--transparentWhiteStat);
+}
+
+footer {
+  padding: 2.5rem 0;
+  background-color: var(--darkBlue);
+}
+
+.attribution {
+  text-align: center;
+  color: var(--white);
+}
+
+.att {
+  color: var(--softViolet);
+  text-decoration: none;
+}
