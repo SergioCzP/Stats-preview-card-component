@@ -110,7 +110,7 @@ img {
 .card__images::after {
   content: "";
   background-color: hsla(277, 64%, 61%, 0.5);
-  background-color: hsla(277, 67%, 39%, 0.5);
+  background-color: hsla(277, 90%, 28%, 0.5);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -150,6 +150,7 @@ img {
 @media (min-width: 992px) {
   .card__content {
     padding-right: 5rem;
+    row-gap: 0.5rem;
   }
 }
 
@@ -163,7 +164,7 @@ img {
 @media (min-width: 768px) {
   .card__title {
     text-align: left;
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
 }
 
@@ -182,6 +183,7 @@ img {
   .card__paragraph {
     text-align: left;
     padding-right: 5rem;
+    line-height: 1.8;
   }
 }
 
