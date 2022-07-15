@@ -51,6 +51,12 @@ img {
   }
 }
 
+@media (min-width: 992px) {
+  .fill {
+    height: 100vh;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
