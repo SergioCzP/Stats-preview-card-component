@@ -47,12 +47,6 @@ img {
 @media (min-width: 768px) {
   .fill {
     margin: 0 auto;
-    height: 150vh;
-  }
-}
-
-@media (min-width: 992px) {
-  .fill {
     height: 100vh;
   }
 }
