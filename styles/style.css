@@ -41,6 +41,14 @@ img {
   justify-content: center;
   padding: 5rem 2rem;
   background-color: var(--darkBlue);
+  max-width: 144rem;
+}
+
+@media (min-width: 768px) {
+  .fill {
+    margin: 0 auto;
+    height: 100vh;
+  }
 }
 
 .card {
@@ -57,10 +65,25 @@ img {
   border-radius: 1rem;
 }
 
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row-reverse;
+    max-width: 90%;
+  }
+}
+
 .card__images {
   position: relative;
   max-width: 34rem;
   height: 25rem;
+}
+
+@media (min-width: 768px) {
+  .card__images {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+  }
 }
 
 .card__img {
@@ -97,11 +120,27 @@ img {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .card__content {
+    align-items: unset;
+    margin: 0 auto;
+    padding: 5rem 1.2rem;
+    width: 50%;
+  }
+}
+
 .card__title {
   text-align: center;
   color: var(--white);
   font-size: 2.9rem;
   margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .card__title {
+    text-align: left;
+    font-size: 2.5rem;
+  }
 }
 
 .card__title--purple {
@@ -115,10 +154,23 @@ img {
   color: var(--transparentWhiteMain);
 }
 
+@media (min-width: 768px) {
+  .card__paragraph {
+    text-align: left;
+  }
+}
+
 .info {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .info__description {
@@ -127,11 +179,24 @@ img {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .info__description {
+    align-items: flex-start;
+  }
+}
+
 .info__number {
   color: var(--white);
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .info__number {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
 }
 
 .info__sector {
@@ -142,9 +207,17 @@ img {
   color: var(--transparentWhiteStat);
 }
 
+@media (min-width: 768px) {
+  .info__sector {
+    font-size: 1.2rem;
+  }
+}
+
 footer {
   padding: 2.5rem 0;
   background-color: var(--darkBlue);
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .attribution {
